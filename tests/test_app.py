@@ -6,4 +6,4 @@ def test_home_page():
     response = client.get("/")
 
     assert response.status_code == 200
-    assert b"Hello from Terraform ECR CD!" in response.data
+    assert b"versione aggiornata" in response.data
